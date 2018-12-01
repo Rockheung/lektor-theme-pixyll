@@ -15,7 +15,9 @@
       {{ post.author }}
     {% endif %}
     -->
-    <time class="dt-published" datetime="{{ post.pub_date }}">{{ post.pub_date.strftime("%b %d, %Y")}}</time>
+    {% if post.pub_date %}
+    <time class="dt-published" datetime="{{ post.pub_date }}">{{ post.pub_date|datetimeformat('medium') }}</time>
+    {% endif %}
   </p>
   </div>
   <article class="post-content">

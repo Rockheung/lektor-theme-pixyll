@@ -1,4 +1,4 @@
-# Pixyll
+# Pixyll: Paused. 
 
 This is where a description of your theme goes.
 Provide usage instructions here.
